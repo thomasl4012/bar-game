@@ -30,11 +30,8 @@ export const Form = ({ handleClick, gameState, number, value, roman }) => {
             </div>
           ) : (
             <div className="loose">
-              <p>
+              <p style={{ margin: "6px" }}>
                 you loose at number : <b>{number}</b>
-              </p>
-              <p>
-                you played <b>{value}</b> instead of <b>{roman}</b>
               </p>
             </div>
           )}

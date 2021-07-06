@@ -6,15 +6,21 @@ function App() {
   const [counter, setCounter] = useState(1);
   const [romanCounter, setromanCounter] = useState("I");
   const [gameState, setGameState] = useState(true);
-  const handleChange = (e) => {
-    e.preventDefault();
-    const value = e.target.value;
-    setstate(value);
-  };
 
-  const handleSubmit = (e) => {
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+
+  //
+  // };
+
+  const handleClick = (e) => {
     e.preventDefault();
-    setstate("");
+    const value = e.target.innerText;
+
+    if (value !== romanCounter[0]) {
+      setGameState(false);
+    }
+
     if (romanCounter.length > 1) {
       let removedItem = romanCounter.slice(1);
       setromanCounter(removedItem);
@@ -23,9 +29,7 @@ function App() {
       setromanCounter(romanize(counter + 1).split(""));
     }
 
-    if (state !== romanCounter[0]) {
-      setGameState(false);
-    }
+    setstate(value);
   };
 
   const romanize = (num) => {
@@ -73,10 +77,11 @@ function App() {
     <div className="App">
       <div>What's next element ?</div>
       <Form
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
+        handleClick={handleClick}
         gameState={gameState}
         value={state}
+        number={counter}
+        roman={romanCounter[0]}
       />
     </div>
   );

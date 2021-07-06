@@ -1,30 +1,45 @@
 import React from "react";
 import "./form.style.css";
 
-export const Form = ({ handleChange, handleSubmit, gameState, value }) => {
+export const Form = ({ handleClick, gameState, number, value, roman }) => {
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <div className="form-row">
-          <div className="col m-2">
-            <input
-              className="form-control"
-              onChange={handleChange}
-              value={value}
-              type="text"
-            ></input>
-          </div>
-          <div className="col m-2">
-            {gameState ? (
-              <button className="btn btn-primary" type="submit">
-                check
+      <div className="form-row">
+        <div className="col m-2"></div>
+        <div className="col m-2">
+          {gameState ? (
+            <div>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                I
               </button>
-            ) : (
-              <p>you loose </p>
-            )}
-          </div>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                V
+              </button>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                X
+              </button>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                L
+              </button>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                C
+              </button>
+              <button className="btn btn-primary m-2" onClick={handleClick}>
+                M
+              </button>
+            </div>
+          ) : (
+            <div className="loose">
+              <p>
+                you loose at number : <b>{number}</b>
+              </p>
+              <p>
+                you played <b>{value}</b> instead of <b>{roman}</b>
+              </p>
+            </div>
+          )}
         </div>
-      </form>
+      </div>
     </div>
   );
 };

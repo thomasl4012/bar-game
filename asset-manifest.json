@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/bar-game/static/css/main.8e224333.chunk.css",
-    "main.js": "/bar-game/static/js/main.46554d4c.chunk.js",
-    "main.js.map": "/bar-game/static/js/main.46554d4c.chunk.js.map",
+    "main.css": "/bar-game/static/css/main.b4586672.chunk.css",
+    "main.js": "/bar-game/static/js/main.98c8a070.chunk.js",
+    "main.js.map": "/bar-game/static/js/main.98c8a070.chunk.js.map",
     "runtime-main.js": "/bar-game/static/js/runtime-main.f6f52b78.js",
     "runtime-main.js.map": "/bar-game/static/js/runtime-main.f6f52b78.js.map",
     "static/js/2.f1e6e084.chunk.js": "/bar-game/static/js/2.f1e6e084.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.e3d4e608.chunk.js": "/bar-game/static/js/3.e3d4e608.chunk.js",
     "static/js/3.e3d4e608.chunk.js.map": "/bar-game/static/js/3.e3d4e608.chunk.js.map",
     "index.html": "/bar-game/index.html",
-    "static/css/main.8e224333.chunk.css.map": "/bar-game/static/css/main.8e224333.chunk.css.map",
+    "static/css/main.b4586672.chunk.css.map": "/bar-game/static/css/main.b4586672.chunk.css.map",
     "static/js/2.f1e6e084.chunk.js.LICENSE.txt": "/bar-game/static/js/2.f1e6e084.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f6f52b78.js",
     "static/js/2.f1e6e084.chunk.js",
-    "static/css/main.8e224333.chunk.css",
-    "static/js/main.46554d4c.chunk.js"
+    "static/css/main.b4586672.chunk.css",
+    "static/js/main.98c8a070.chunk.js"
   ]
 }
